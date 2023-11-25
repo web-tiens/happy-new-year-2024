@@ -2,7 +2,7 @@ import React from 'react'
 import { StyledModal } from './ModalStyles'
 import { CloseOutline } from 'react-ionicons'
 
-export default function Modal({ isOpen, modalCloseBtn }) {
+export default function Modal({ isOpen, modalCloseBtn, text }) {
   return (
     <StyledModal>
       <div className={ isOpen ? "modalClosed" : "modal modalOpen" }>
@@ -12,11 +12,11 @@ export default function Modal({ isOpen, modalCloseBtn }) {
           <img id="modal-toy-bg" src="./img/toy-bg.png" alt="toy bg modal" />
           <h1 className="modal__title">Пожелание дня</h1>
           <div className="modal__txt">
-            <p>Эгей, это не подарок сегодняшнего дня. Какое сегодня число? Ищите подарок в соответствующем оконце! =) </p>
+            <p>{ text }</p>
           </div>
           <h1 className="modal__title">Предложение дня</h1>
           <div className="modal__txt">
-            <p>При заказе продающего текста от 1500 знаков размещение на сайте в подарок</p>
+            <p>{ text }</p>
           </div>
           <div className="modal__submit">
             <a href="" className="modal__btn">Воспользоваться</a>

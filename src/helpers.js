@@ -18,7 +18,7 @@ export const hatchArray = [
     nr: 1,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+    "Текст с поздравлениями",
     open: false,
   },
   {
@@ -26,7 +26,7 @@ export const hatchArray = [
     nr: 2,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -34,7 +34,7 @@ export const hatchArray = [
     nr: 3,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -42,7 +42,7 @@ export const hatchArray = [
     nr: 4,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -50,7 +50,7 @@ export const hatchArray = [
     nr: 5,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -58,7 +58,7 @@ export const hatchArray = [
     nr: 6,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -66,7 +66,7 @@ export const hatchArray = [
     nr: 7,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -74,7 +74,7 @@ export const hatchArray = [
     nr: 8,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -82,7 +82,7 @@ export const hatchArray = [
     nr: 9,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -90,7 +90,7 @@ export const hatchArray = [
     nr: 10,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -98,7 +98,7 @@ export const hatchArray = [
     nr: 11,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -106,7 +106,7 @@ export const hatchArray = [
     nr: 12,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -114,7 +114,7 @@ export const hatchArray = [
     nr: 13,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -122,7 +122,7 @@ export const hatchArray = [
     nr: 14,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -130,7 +130,7 @@ export const hatchArray = [
     nr: 15,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -138,7 +138,7 @@ export const hatchArray = [
     nr: 16,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -146,7 +146,7 @@ export const hatchArray = [
     nr: 17,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -154,7 +154,7 @@ export const hatchArray = [
     nr: 18,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -162,7 +162,7 @@ export const hatchArray = [
     nr: 19,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -170,7 +170,7 @@ export const hatchArray = [
     nr: 20,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -178,7 +178,7 @@ export const hatchArray = [
     nr: 21,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -186,7 +186,7 @@ export const hatchArray = [
     nr: 22,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -194,7 +194,7 @@ export const hatchArray = [
     nr: 23,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -202,7 +202,7 @@ export const hatchArray = [
     nr: 24,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -210,7 +210,7 @@ export const hatchArray = [
     nr: 25,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -218,7 +218,7 @@ export const hatchArray = [
     nr: 26,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -226,7 +226,7 @@ export const hatchArray = [
     nr: 27,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -234,7 +234,7 @@ export const hatchArray = [
     nr: 28,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -242,7 +242,7 @@ export const hatchArray = [
     nr: 29,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -250,7 +250,7 @@ export const hatchArray = [
     nr: 30,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   },
   {
@@ -258,7 +258,7 @@ export const hatchArray = [
     nr: 31,
     img: "./img/1.jpg",
     text:
-      "Something unique for this card",
+      "Текст с поздравлениями",
     open: false,
   }
   

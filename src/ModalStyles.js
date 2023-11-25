@@ -12,8 +12,38 @@ export const StyledModal = styled.div`
   background-color: #fff;
   border-radius: 10px;
   padding: 14px;
+  overflow: hidden;
 
 }
+
+@media screen and (max-width: 1920px) {
+  .modal {
+    top: -2%;
+    left: 50%;
+    transform: translateX(-50%) translateY(2%);
+  }
+}
+
+
+
+@media screen and (max-width: 870px) {
+  .modal {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    transform: translateX(0) translateY(0);
+    border-radius: 0;
+    padding: 0;
+    height: 100vh;
+  }
+}
+
+
+
+
+
+
 
 .modal__inner {
   position: relative;
@@ -21,6 +51,7 @@ export const StyledModal = styled.div`
   padding: 45px 60px 40px;
   border: 1px solid #b096c4;
   border-radius: 10px;
+  overflow: hidden;
 
   .modal-close-ico {
     position: absolute;
@@ -96,7 +127,18 @@ export const StyledModal = styled.div`
     background-color: #dd3947;
   }
 }
-
+@media screen and (max-width: 870px) {
+  .modal__inner {
+    border: 1px solid #fff;
+    padding: 45px 36px 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .modal__inner {
+    border: 1px solid #fff;
+    padding: 45px 20px 40px;
+  }
+}
 
 .modalOpen {
   display: block;
