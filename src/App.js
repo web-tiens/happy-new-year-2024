@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { createGlobalStyle } from 'styled-components';
-import { createCalendar, hatchArray } from './helpers'
+import { createCalendar } from './helpers'
 import Hatch from './Hatch'
 import { StyledApp } from './AppStyles'
 import Modal from "./Modal";
@@ -22,7 +22,6 @@ const GlobalStyle = createGlobalStyle`
     h1 { font-size: 32px; }
     h2 { font-size: 18px; }
   }
-
 
 
   #root {
@@ -262,6 +261,68 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
+  .tiens-christmas-main {
+    width: 100%;
+    height: 141vh;
+    background: linear-gradient(#A9DCFB 80%, #aaddfc);
+    position: relative;
+    border: none;
+  }
+
+  #house-main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .grid-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 240px;
+  }
+
+  .grid-wrapper-color-filler {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background: #74636B;
+    display: none;
+  }
+  @media only screen and (max-width: 850px) {
+    .grid-wrapper-color-filler {
+      height: 700px;
+      display: block;
+      bottom: -250px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .grid-wrapper-color-filler {
+      height: 1000px;
+      bottom: -360px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .grid-wrapper-color-filler {
+      height: 2435px;
+    }
+  }
+
+  .door {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    width: 205px;
+    height: 270px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .door {
+      right: 25px;
+    }
+  }
+
 
 `
 const cardText = [
@@ -338,23 +399,28 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <StyledApp>
-        {
-          hatches.map(hatch => 
-            <Hatch 
-              key={hatch.id} 
-              hatchData={hatch}
-              handleClick={handleFlipHatch}
-              setShowModal={() => setTimeout(() => setShowModal(false), 280) }
-              shuffleCards = { shuffleCards}
-            />
-            )  
-        }
-      </StyledApp>
+      <div className="grid-wrapper">
+        <div className="grid-wrapper-color-filler">
+          <img className="door" src="./img/door.png" alt="The Entrance Door" />
+        </div>
+        <StyledApp>
+          {
+            hatches.map(hatch => 
+              <Hatch 
+                key={hatch.id} 
+                hatchData={hatch}
+                handleClick={handleFlipHatch}
+                setShowModal={() => setTimeout(() => setShowModal(false), 280) }
+                shuffleCards = { shuffleCards}
+              />
+              )  
+          }
+        </StyledApp>
+      </div>
         {
           cards.map((card) => (
             <Modal 
-            key={card.id}
+              key={card.id}
               isOpen={showModal} 
               modalCloseBtn={() => setShowModal(true)} 
               text = { card.text } 
