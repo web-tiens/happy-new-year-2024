@@ -263,7 +263,7 @@ const GlobalStyle = createGlobalStyle`
 
   .tiens-christmas-main {
     width: 100%;
-    height: 141vh;
+    height: 127vh;
     background: linear-gradient(#A9DCFB 80%, #aaddfc);
     position: relative;
     border: none;
@@ -271,6 +271,7 @@ const GlobalStyle = createGlobalStyle`
 
   #house-main {
     position: absolute;
+    z-index: 6;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -292,7 +293,8 @@ const GlobalStyle = createGlobalStyle`
   }
   @media only screen and (max-width: 850px) {
     .grid-wrapper-color-filler {
-      height: 700px;
+      height: 1000px;
+      z-index: 7;
       display: block;
       bottom: -250px;
     }
@@ -305,7 +307,7 @@ const GlobalStyle = createGlobalStyle`
   }
   @media only screen and (max-width: 600px) {
     .grid-wrapper-color-filler {
-      height: 2435px;
+      height: 3000px;
     }
   }
 
@@ -320,6 +322,26 @@ const GlobalStyle = createGlobalStyle`
   @media only screen and (max-width: 600px) {
     .door {
       right: 25px;
+    }
+  }
+
+  .bg-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .snow-bottom-white-block {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#B6D2F7, #fff 100%);
+    position: relative;
+    top: -70px;
+  }
+
+  @media only screen and (max-width: 1640px) {
+    .snow-bottom-white-block {
+      top: 0;
     }
   }
 
@@ -403,6 +425,10 @@ function App() {
         <div className="grid-wrapper-color-filler">
           <img className="door" src="./img/door.png" alt="The Entrance Door" />
         </div>
+
+        {/* <div className="grid-wrapper__bg-img">
+          <img src="./img/bg-img.png" alt="Background Image" />
+        </div> */}
         <StyledApp>
           {
             hatches.map(hatch => 

@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const StyledApp = styled.div`
+  position: relative;
+  z-index: 7;
   column-gap: 90px;
   row-gap: 130px;
   width: 665px;
