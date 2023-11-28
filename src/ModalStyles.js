@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledModal = styled.div`
 .modal {
   position: absolute;
-  z-index: 6;
+  z-index: 21;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
