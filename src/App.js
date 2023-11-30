@@ -175,7 +175,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .tiens-christmas-hero__moon-img {
     position: absolute;
-    top: 54px; left: 156px;
+    top: 76px; left: 156px;
     position: absolute;
     z-index: 5;
   }
@@ -253,20 +253,20 @@ const GlobalStyle = createGlobalStyle`
     width: 500px;
     position: absolute;
     z-index: 8;
-    bottom: -216px;
-    right: 0;
+    bottom: -600px;
+    right: 120px;
   }
   .snowman {
     width: 374px;
     position: absolute;
     z-index: 8;
-    bottom: -198px;
-    left: 136px;
+    bottom: -600px;
+    left: 226px;
   }
   .elka {
-    z-index: 6;
+    z-index: 5;
     position: absolute;
-    bottom: -30px;
+    bottom: -400px;
     left: -114px;
   }
   .snowballs {
@@ -411,7 +411,6 @@ const GlobalStyle = createGlobalStyle`
 
     .santa { bottom: -720px; right: -90px; }
     .snowman { bottom: -720px; left: -110px; }
-    .elka { bottom: -280px; }
   }
   @media only screen and (max-width: 1412px) {
     .santa {
@@ -452,6 +451,11 @@ const GlobalStyle = createGlobalStyle`
       height: 70vh;
     }
 
+    
+    .santa {bottom: -1220px;}
+    .snowman { bottom: -1220px; }
+    .elka { display: none; } 
+
   }
   @media only screen and (max-width: 1024px) {
     .santa {
@@ -460,6 +464,7 @@ const GlobalStyle = createGlobalStyle`
     .snowman {
       display: block;
     }
+    .elka { display: none; } 
   }
   @media only screen and (max-width: 993px) {
     h1 { font-size: 32px; }
@@ -550,8 +555,8 @@ const GlobalStyle = createGlobalStyle`
 
   @media only screen and (max-width: 380px) {
     .tiens-christmas-hero__inner {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
     .snow-bottom-social-media { bottom: -380px; }
   }
