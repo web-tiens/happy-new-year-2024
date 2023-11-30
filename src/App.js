@@ -345,7 +345,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media only screen and (max-width: 430px) {
     .snow-bottom-social-media {
-      bottom: -430px;
+      bottom: -900px;
     }
   }
 
