@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: #B6D2F7;
+    background: linear-gradient(#B6D2F7, #FFF);
     margin: 0;
     
   }
