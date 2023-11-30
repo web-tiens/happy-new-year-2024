@@ -12,15 +12,17 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-size: 100%;
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
     overflow-x: hidden;
     background: #B6D2F7;
     margin: 0;
+    
   }
+
+ 
 
   h1 { font-size: 50px; }
   h2 { font-size: 25px; }
-
-
 
   #root {
     position: relative;
@@ -74,14 +76,15 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
     background: #fff;
-    position: relative;
-    z-index: 20;
+    position: fixed;
+    z-index: 60;
   }
 
   .tiens-christmas-header__inner {
     margin: 0 40px;
-    padding: 20px 0;
+    padding: 12px 0;
   }
+
 
   .tiens-christmas-header__logo {
     width: 190px;
@@ -89,8 +92,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #logo {
-    width: 170px;
-    height: 50px;
+    width: 135px;
   }
 
   .overlay {
@@ -117,21 +119,19 @@ const GlobalStyle = createGlobalStyle`
 
   
   .tiens-christmas-hero {
+    padding-block-end: 260px;
     position: relative;
     font-family: 'Nunito', sans-serif;
     width: 100%;
     height: 100vh;
     background: linear-gradient(#2e2759, #5B649A, #aaddfc);
   }
-
   .tiens-christmas-hero__inner {
-    padding: 112px 0 20px;
+    padding: 172px 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
-
   .tiens-title-main {
     line-height: 54px; 
     text-transform: uppercase;
@@ -142,9 +142,8 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
   }
-
-
   .tiens-subtitle-main {
+    text-align: center;
     text-transform: uppercase;
     font-weight: 800;
     display: flex;
@@ -152,21 +151,19 @@ const GlobalStyle = createGlobalStyle`
     color: #fff;
     margin: 0 0 45px;
   }
-
   .tiens-christmas-hero__desc {
+    width: 610px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     font-size: 19px;
     color: #fff;
     margin-bottom: 40px;
   }
-
-
   .tiens-christmas-hero__desc p {
     text-align: center;
     margin: 4px;
   }
-
   .tiens-christmas-hero__sky-stars-wrapper {
     width: 100%;
     height: 350px;
@@ -176,21 +173,16 @@ const GlobalStyle = createGlobalStyle`
     top: 0; left: 0;
     z-index: 5;
   }
-
   .tiens-christmas-hero__moon-img {
     position: absolute;
-    top: 24px; left: 156px;
+    top: 54px; left: 156px;
     position: absolute;
     z-index: 5;
   }
-
-
-
   .tiens-christmas-hero__moon-img img {
     width: 215px;
 
   }
-
   .tiens-christmas-main {
     width: 100%;
     height: 124vh;
@@ -199,10 +191,6 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     margin-bottom: 2765px;
   }
-
-
-
-
   #house-main {
     position: absolute;
     z-index: 6;
@@ -237,10 +225,6 @@ const GlobalStyle = createGlobalStyle`
       left: 170px;
     }
   }
-
-
-
-
   .door {
     position: absolute;
     right: 60px;
@@ -248,15 +232,11 @@ const GlobalStyle = createGlobalStyle`
     width: 205px;
     height: 270px;
   }
-
-
-
   .bg-img {
     position: absolute;
     bottom: 0;
     width: 100%;
   }
-
   .snow-bottom-white-block {
     position: relative;
     font-family: 'Nunito', sans-serif;
@@ -268,8 +248,6 @@ const GlobalStyle = createGlobalStyle`
     top: -70px;
     z-index: 4;
   }
-
-
   .santa {
     width: 500px;
     position: absolute;
@@ -277,8 +255,6 @@ const GlobalStyle = createGlobalStyle`
     bottom: -216px;
     right: 0;
   }
-
-
   .snowman {
     width: 374px;
     position: absolute;
@@ -286,29 +262,24 @@ const GlobalStyle = createGlobalStyle`
     bottom: -198px;
     left: 136px;
   }
-
   .elka {
     z-index: 3;
     position: absolute;
     bottom: -30px;
     left: -114px;
   }
-
   .snowballs {
     position: absolute;
     z-index: 7;
     bottom: -60px;
     left: 420px;
   }
-
   .snow-banner-right {
     position: absolute;
     bottom: -60px;
     right: 360px;
     z-index: 7;
   }
-
-
   .snow-bottom-white-block__inner-title {
     color: #2e2759;
     display: flex;
@@ -319,9 +290,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 800;
     text-align: center;
   }
-
   .snow-bottom-info {
-    background-image: url('./img/banner-bg.jpg');
     background-repeat: repeat;
 
     width: 1050px;
@@ -374,6 +343,13 @@ const GlobalStyle = createGlobalStyle`
     height: 120px;
   }
 
+  @media only screen and (max-width: 430px) {
+    .snow-bottom-social-media {
+      bottom: -430px;
+    }
+  }
+
+
   .social-media__inner {
     width: 100%;
     display: flex;
@@ -381,10 +357,10 @@ const GlobalStyle = createGlobalStyle`
   }
   
   .social-media__txt {
+    width: 590px;
     font-size: 24px;
     color: #222927;
     text-align: left;
-
   }
 
   .social-media__icons-wrapper {
@@ -436,25 +412,14 @@ const GlobalStyle = createGlobalStyle`
     .snowman { bottom: -720px; left: -110px; }
     .elka { bottom: -280px; }
   }
-
-
-
-
   @media only screen and (max-width: 1412px) {
     .santa {
       right: -150px;
     }
-
-
     // .snowman {
     //   display: none;
     // }
   }
-
-
-
-
-
 
   // @media only screen and (max-width: 1330px) {
   //   .santa {
@@ -467,11 +432,17 @@ const GlobalStyle = createGlobalStyle`
       width: auto;
     }
   }
+  @media only screen and (max-width: 1160px) {
+    .social-media__inner {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+    }
+    .social-media__txt {
+      text-align: center;
 
-
-
-
-
+    }
+  }
   @media only screen and (max-width: 1024.9px) {
     .tiens-christmas-container {
       width: 100%;
@@ -481,15 +452,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
   }
-
-
-
   @media only screen and (max-width: 1024px) {
     .santa {
-      display: none;
+      display: block;
     }
     .snowman {
-      display: none;
+      display: block;
     }
   }
   @media only screen and (max-width: 993px) {
@@ -511,7 +479,7 @@ const GlobalStyle = createGlobalStyle`
     .tiens-christmas-hero__inner {
       padding-left: 40px;
       padding-right: 40px;
-      padding-top: 224px;
+      padding-top: 312px;
     }
 
     .tiens-christmas-hero__moon-img {
@@ -525,26 +493,25 @@ const GlobalStyle = createGlobalStyle`
       justify-content: left;
       line-height: 38px;
     }
-
     .tiens-christmas-hero__desc {
       justify-content: left;
       text-align: left;
       font-size: 16px;
+      margin: 0;
+      margin-bottom: 48px;
     }
-
     .tiens-subtitle-main {
-      font-size: 20px;
+      font-size: 18px;
       justify-content: left;
-      width: 100%;
+      width: 660px;
       margin-bottom: 24px;
+      text-align: left;
     }
-
     .tiens-christmas-hero__desc p {
       justify-content: left;
       text-align: left;
     }
   }
-
   @media only screen and (max-width: 850px) {
     .santa {
       display: none;
@@ -563,6 +530,12 @@ const GlobalStyle = createGlobalStyle`
       height: 1000px;
       bottom: -360px;
     }
+    .tiens-subtitle-main {
+      width: 100%;
+    }
+    .tiens-christmas-hero__desc {
+      width: 100%;
+    }
   }
   @media only screen and (max-width: 600px) {
     .door {
@@ -573,43 +546,17 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  
-  // @media only screen and (max-width: 1940px)  {
-  //   .snow-bottom-white-block { padding-top: 342px; }
-  // }
-
-  // @media only screen and (max-width: 1560px)  {
-  //   .snow-bottom-white-block { padding-top: 524px; }
-  // }
-
-  // @media only screen and (max-width: 1366px) and (min-width: 1024px) {
-  //   .snow-bottom-white-block { padding-top: 248px; }
-  // }
-
-  // @media only screen and (max-width: 1280px)  {
-  //   .snow-bottom-white-block { padding-top: 678px; }
-  // }
-
-  // @media only screen and (max-width: 1024px) and {
-  //   .snow-bottom-white-block { padding-top: 470px; }
-  // }
-
-
   @media only screen and (max-width: 380px) {
     .tiens-christmas-hero__inner {
       padding-left: 20px;
       padding-right: 20px;
     }
+    .snow-bottom-social-media { bottom: -380px; }
   }
-
-
-
   @media only screen and (min-width: 428px) {
     .snow-bottom-white-block {
       padding-top: 218px;
     }
-  }
-
 
   // Min-width properties
   @media only screen and (min-width: 768px) {
@@ -617,13 +564,11 @@ const GlobalStyle = createGlobalStyle`
       margin-bottom: 865px;
     }
   }
-
   @media only screen and (min-width: 768px) {
     .snow-bottom-white-block {
       padding-top: 438px;
     }
   }
-
   @media only screen and (min-width: 1024px) {
     .tiens-christmas-main {
       margin-bottom: 80px;
@@ -632,22 +577,18 @@ const GlobalStyle = createGlobalStyle`
       padding-top: 896px;
     }
   }
-
   @media only screen and (min-width: 1280px) {
 
     .snow-bottom-white-block {
       padding-top: 698px;
     }
   }
-
   @media only screen and (min-width: 1440px) {
 
     .snow-bottom-white-block {
       padding-top: 660px;
     }
   }
-
-  
   @media only screen and (min-width: 1900px) {
 
     .snow-bottom-white-block {
@@ -655,43 +596,39 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-
-
-
-
 `
 const cardText = [
-  { text: "Поздравляем с новым годом! Желаем крепкого здоровья!" },
-  { text: "Семейного счастья, любви и благополучия!" },
-  { text: "Будьте сильны, остры и крепки!" },
-  { text: "Любовь пусть сопутствует вам с каждым днем!" },
-  { text: "Снег счасться да обрушится на вашу голову" },
-  { text: "Пусть Аллах пребудет с вами в новом году!" },
-  { text: "Мы любив вас и желаем ват добра и терпения!" },
-  { text: "Никогда не опускайте руки!" },
-  { text: "Мы всегда рядом с вами! Помните об этом" },
-  { text: "Не болейте в новом году, пусть ваше здоровье только крепчает!" },
-  { text: "Мы любим вас и ваших детей!" },
-  { text: "Побольше денег, богатства и семейного счастья" },
-  { text: "Пусть радость будет вам наградой в следующем году" },
-  { text: "Побольше солнечных дней и ярких лучей вам в жизни!" },
-  { text: "Любви все возрасты покорны! Желаем найти свою второю половинку в новом году" },
-  { text: "Не теряйте друзей и близких, храните в своих сердцах и усопших!" },
-  { text: "Пусть наши подарки сделают вашу жизнь лучше" },
-  { text: "Цените каждое мгновение" },
-  { text: "Не забывайте, что самая главное - это вы" },
-  { text: "Любовь стоит того чтобы ждать" },
-  { text: "Да благославится ваш дом!" },
-  { text: "Терпения, терпения и только терпения..." },
-  { text: "Храните чистоту в сердцах ваших" },
-  { text: "С Новым Годом 2024!" },
-  { text: "Разнообразьте жизнь с Тиенс" },
-  { text: "Поделитесь нашей косметикой с вашими близкими и друзьями" },
-  { text: "Оставаятесь такими какие вы есть!" },
-  { text: "Не бойтесь ничего и никаких преград в следующем году" },
-  { text: "Ваша жизнь - руках Аллаха" },
-  { text: "Вы сильны и прекрасны" },
-  { text: "Удачи вам и счастья!" }
+  { text: "Наша команда Тяньши поздравляет вас с наступающим Новым годом! Мы желаем вам много счастья, любви и процветания!" },
+  { text: "Приобретите продукцию Тяньши и вы будете благоухать в Новом Году!" },
+  { text: "Не ограничивайте себя ни в чем! Помните предстоящий год - ваша новая возможность, сделать то о чем мечтали в прошлом году!" },
+  { text: "Сделайте близким подарок, купив наборы Тяньши. " },
+  { text: "Любите близких своих. Тяньши сделает вашу жизнь ярче и прекраснее!" },
+  { text: "Пусть улыбка сияет на вашем лице каждый день в Новом Году!" },
+  { text: "Мы поздравляем вас с наступающим Новым Годом! Желаем вам осществления вашей мечти и много радости!" },
+  { text: "На Деда Мороза надейся, но и сам не плошай" },
+  { text: "Мы уверены что вас ждет большое счастье в Новом Году!" },
+  { text: "Больше путешествуйте, заводите новые знакомства и не забывайте про своих близких в Новом Году!" },
+  { text: "Будьте смелы в принимаемых вами решениях, мы уверены, вы обязательно достигните то чего пожелаете в Новом Году!" },
+  { text: "Верьте в себя и в свои силы. Вы всегда сможете найти поддержку от нашей команды. Помните TIENS всегда с вами!" },
+  { text: "Мы желаем Вам найти свою вторую половинку в 2024 году" },
+  { text: "Пусть невзгоды обойдут вас стороной в Новом Году, желаем вам крепчайшего здоровья и долголетия!" },
+  { text: "Заварите себе чай Тяньши, и встретьте Новый Год в окружении близких" },
+  { text: "Помните, что таблетки Тяньши делают вас крепче и сильнее! Желаем вам в 2024 году исполнения ваших желаний и крепкого здоровья!" },
+  { text: "Кризис – это всегда новые возможности. С Тяньши вы найдете в себе второе дыхание, новый источник сил и превзойдете самих себя в Новом Году! Помните, мы - в это верим!" },
+  { text: "Пусть пополнится ваш гардероб красивыми вещами! Мы желаем вам оставайться такими же женственными и прекрасными в Новом Году! " },
+  { text: "Тяньши желаем вам много счастья в Новом Году! Встретьте его красочными фейерверками, теплыми поздравлениями и килограммами мандаринов!" },
+  { text: "Ваше счастье - наше счастье. Ведь мы по-настоящему хотим войти в каждый дом, в каждое сердце. Тяньши поздравляет вас с наступающим Новым Годом, и желает вам прилива сил и семейного счастья!" },
+  { text: "Словите драйв новогоднего праздника, Тяньши искренне верит, вы добьетесь всего чего пожелаете в Новом Году!" },
+  { text: "Подарите себе капельку любви в новогоднюю ночь, растворив пакетик чая Тяньши! Он придаст вам бодрости, сил и прекрасное настроение! " },
+  { text: "Говорите громко, о чем мечтаете в 2024 году. Ведь только, даря друг другу любовь и заботу, мы способны быть людьми. Тяньши воплотит ваши просьбы в реальность!" },
+  { text: "Наша большая дружная семья Тяньши искренне желает вам много большого счастья в Новом Году и семейного благополуия!" },
+  { text: "Тяньши поздравляет вас с наступающим Новым Годом! Наша команда желает вам много счастья, терпения и сил в Новом 2024 году!" },
+  { text: "Сделайте свою жизнь ярче с Тяньши! Подарите себе набор косметики Тяньши, ведь с Тяньши вы выглядите красивее и моложе!" },
+  { text: "Оставайтесь такими какие вы есть! Млодыми и красивыми!" },
+  { text: "Пусть Бог сопутствует вам во всех ваших делах, пусть неудачи обойдут вас стороной, а ваша жизнь наполнилась изобилием блаженства! Тяньши всегда рядом, помните об этом!" },
+  { text: "Пусть новогодняя ночь превратится в прекрасную зимнюю сказку! Помните, вы - главный герой этого торжества" },
+  { text: "тяньши желает вам исполнения всех ваших желаний! Делайте то, о чем мечтаете, говорите громко, чтобы мы могли вас услышать! Мы уверены, с Тяньши вы добьетесь любых результатов!" },
+  { text: "Пусть счастье обложит вас со всех сторон в Новом Году! Покупайте БАДы Тяньши, становитесь сильнее. Ваше здоровье - в наших руках!" }
 ]
 
 
@@ -725,11 +662,11 @@ function App() {
 
   const handleFlipHatch = id => {
     const updatedHatches = hatches.map(hatch =>
-      hatch.id === id ?  { ...hatch, open: !hatch.open } : hatch 
+      hatch.id === id ?  { ...hatch, disabled: true, disabledModal: true } : hatch
+
     );
     setHatches(updatedHatches)
   };
-
 
   return (
     <>
@@ -749,8 +686,8 @@ function App() {
                 key={hatch.id} 
                 hatchData={hatch}
                 handleClick={handleFlipHatch}
-                setShowModal={() => setTimeout(() => setShowModal(false), 280) }
-                shuffleCards = { shuffleCards}
+                setShowModal={(hatch) => { setTimeout(() => setShowModal(false), 280) }}
+                shuffleCards = { shuffleCards }
               />
               )  
           }
@@ -760,13 +697,14 @@ function App() {
           cards.map((card) => (
             <Modal 
               key={card.id}
+              hatchData={card}
               isOpen={showModal} 
               modalCloseBtn={() => setShowModal(true)} 
               text = { card.text } 
             />
           ))
         }
-      <Overlay isOpen={showModal} />
+      {/* <Overlay isOpen={showModal} /> */}
     </>
   );
 }

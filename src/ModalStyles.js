@@ -18,7 +18,7 @@ export const StyledModal = styled.div`
 
 @media screen and (max-width: 1920px) {
   .modal {
-    top: -2%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%) translateY(2%);
   }
@@ -52,6 +52,19 @@ export const StyledModal = styled.div`
   border: 1px solid #b096c4;
   border-radius: 10px;
   overflow: hidden;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .modal__logo {
+    width: 120px;
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   .modal-close-ico {
     position: absolute;
@@ -75,7 +88,7 @@ export const StyledModal = styled.div`
   }
 
   .modal__title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 26px;
@@ -85,9 +98,9 @@ export const StyledModal = styled.div`
   }
 
   .modal__txt {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 28px;
     margin: 15px 0;
     margin-bottom: 80px;
