@@ -338,7 +338,7 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
     bakground-size: 100% 100%;
     position: absolute;
-    bottom: -120px;
+    bottom: -900px;
     width: 100%;
     height: 120px;
   }
