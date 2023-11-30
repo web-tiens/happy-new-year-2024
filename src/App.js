@@ -7,19 +7,19 @@ import Modal from "./Modal";
 import Overlay from './Overlay'
 
 const GlobalStyle = createGlobalStyle`
-  html { overflow-x: hidden; }
+  html { 
+    overflow-x: hidden;   
+
+  }
 
   body {
     background-size: 100%;
     background-repeat: no-repeat;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: linear-gradient(#B6D2F7, #FFF);
     margin: 0;
     
   }
-
- 
 
   h1 { font-size: 50px; }
   h2 { font-size: 25px; }
@@ -190,6 +190,7 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     border: none;
     margin-bottom: 2765px;
+    padding-top: 320px;
   }
   #house-main {
     position: absolute;
@@ -263,7 +264,7 @@ const GlobalStyle = createGlobalStyle`
     left: 136px;
   }
   .elka {
-    z-index: 3;
+    z-index: 6;
     position: absolute;
     bottom: -30px;
     left: -114px;
@@ -528,7 +529,7 @@ const GlobalStyle = createGlobalStyle`
   @media only screen and (max-width: 768px) {
     .grid-wrapper-color-filler {
       height: 1000px;
-      bottom: -360px;
+      bottom: -518px;
     }
     .tiens-subtitle-main {
       width: 100%;
@@ -543,6 +544,7 @@ const GlobalStyle = createGlobalStyle`
     }
     .grid-wrapper-color-filler {
       height: 3000px;
+      bottom: -498px;
     }
   }
 
@@ -571,7 +573,7 @@ const GlobalStyle = createGlobalStyle`
   }
   @media only screen and (min-width: 1024px) {
     .tiens-christmas-main {
-      margin-bottom: 80px;
+      margin-bottom: 70px;
     }
     .snow-bottom-white-block {
       padding-top: 896px;

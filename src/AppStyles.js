@@ -16,7 +16,6 @@ export const StyledApp = styled.div`
   @media only screen and (max-width: 768px) {
     width: 460px;
     grid-template-columns: repeat(4, 1fr);
-    padding-left: 10px;
     padding-right: 32px;
     column-gap: 56px;
     row-gap: 98px;
@@ -24,7 +23,6 @@ export const StyledApp = styled.div`
   @media only screen and (max-width: 600px) {
     width: 224px;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 11px;
   }
 
   
