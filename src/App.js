@@ -128,12 +128,15 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(#2e2759, #5B649A, #aaddfc);
   }
   .tiens-christmas-hero__inner {
+    width: 845px;
+    margin: 0 auto;
     padding: 172px 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .tiens-title-main {
+    text-align: center;
     line-height: 54px; 
     text-transform: uppercase;
     font-weight: 900;
@@ -539,6 +542,14 @@ const GlobalStyle = createGlobalStyle`
 
     .snowman {
       display: none;
+    }
+
+    .tiens-christmas-hero__inner {
+      width: 100%;
+    }
+
+    .tiens-title-main {
+      text-align: left;
     }
   }
   @media only screen and (max-width: 768px) {
