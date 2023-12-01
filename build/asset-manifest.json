@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/tiens-merry-christmas/static/js/main.9d65c711.js",
+    "main.js": "/tiens-merry-christmas/static/js/main.ba873279.js",
     "static/media/window-opened.png": "/tiens-merry-christmas/static/media/window-opened.ec10a208088fb4421a50.png",
     "index.html": "/tiens-merry-christmas/index.html",
-    "main.9d65c711.js.map": "/tiens-merry-christmas/static/js/main.9d65c711.js.map"
+    "main.ba873279.js.map": "/tiens-merry-christmas/static/js/main.ba873279.js.map"
   },
   "entrypoints": [
-    "static/js/main.9d65c711.js"
+    "static/js/main.ba873279.js"
   ]
 }

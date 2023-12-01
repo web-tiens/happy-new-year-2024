@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://artife666.github.io/tiens-merry-christmas/",
-
   "dependencies": {
     "@ionic/react": "^7.5.6",
     "gh-pages": "^6.1.0",
