@@ -46,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 5px 18px;
     box-shadow: 0 10px 20px 2px rgb(247, 174, 0, .32); 
     transition: 0.25s ease; 
+    text-decoration: none;
   }
   .btn-primary:hover {
     padding: 8px 21px;
