@@ -189,8 +189,8 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(#A9DCFB 80%, #aaddfc);
     position: relative;
     border: none;
-    margin-bottom: 2765px;
     padding-top: 320px;
+    margin-bottom: 2765px;
   }
   #house-main {
     position: absolute;
@@ -325,6 +325,7 @@ const GlobalStyle = createGlobalStyle`
   .snow-bottom-info-list {
     font-size: 22px;
     color: #000;
+    list-style-type: none;
   }
 
   .snow-bottom-info-list__item {
@@ -335,11 +336,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .snow-bottom-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('./img/share-bg.jpg');
     background-repeat: no-repeat;
     bakground-size: 100% 100%;
     position: absolute;
-    bottom: -900px;
+    bottom: -400px;
     width: 100%;
     height: 120px;
   }
@@ -440,6 +444,7 @@ const GlobalStyle = createGlobalStyle`
     }
     .social-media__txt {
       text-align: center;
+      margin: 0 auto;
 
     }
   }
@@ -517,6 +522,9 @@ const GlobalStyle = createGlobalStyle`
       justify-content: left;
       text-align: left;
     }
+    .tiens-christmas-main {
+      margin-bottom: 920px;
+    }
   }
   @media only screen and (max-width: 850px) {
     .santa {
@@ -562,13 +570,13 @@ const GlobalStyle = createGlobalStyle`
   }
   @media only screen and (min-width: 428px) {
     .snow-bottom-white-block {
-      padding-top: 218px;
+      padding-top: 600px;
     }
 
   // Min-width properties
   @media only screen and (min-width: 768px) {
     .tiens-christmas-main {
-      margin-bottom: 865px;
+      margin-bottom: 1260px;
     }
   }
   @media only screen and (min-width: 768px) {
@@ -581,7 +589,7 @@ const GlobalStyle = createGlobalStyle`
       margin-bottom: 70px;
     }
     .snow-bottom-white-block {
-      padding-top: 896px;
+      padding-top: 798px;
     }
   }
   @media only screen and (min-width: 1280px) {
@@ -599,7 +607,7 @@ const GlobalStyle = createGlobalStyle`
   @media only screen and (min-width: 1900px) {
 
     .snow-bottom-white-block {
-      padding-top: 279px;
+      padding-top: 560px;
     }
   }
 

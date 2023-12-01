@@ -22,7 +22,7 @@ cursor: pointer;
     justify-content: center;
     font-family: "Dancing Script", cursive;
     color: #008E45;
-    padding: 20px;
+    padding: 35px;
     border-radius: 50%;
     background: rgba(250, 250, 250, 0.88);
     font-weight: 700;
