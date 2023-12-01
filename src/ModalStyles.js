@@ -37,6 +37,12 @@ export const StyledModal = styled.div`
     padding: 0;
     height: 100vh;
   }
+
+  .modal-close-ico {
+    top: 60px;
+  }
+
+
 }
 
 
@@ -47,7 +53,7 @@ export const StyledModal = styled.div`
 
 .modal__inner {
   position: relative;
-  height: 85%;
+  height: 100%;
   padding: 45px 60px 40px;
   border: 1px solid #b096c4;
   border-radius: 10px;
@@ -161,6 +167,4 @@ export const StyledModal = styled.div`
   display: none;
 }
 
-.modal__inner {
-
-}`
+`
