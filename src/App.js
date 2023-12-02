@@ -84,12 +84,22 @@ const GlobalStyle = createGlobalStyle`
   .tiens-christmas-header__inner {
     margin: 0 40px;
     padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
   }
 
 
   .tiens-christmas-header__logo {
     width: 190px;
     height: 110px;
+  }
+
+  .tiens-christmas__close-ico {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 
   #logo {
@@ -674,19 +684,12 @@ function App() {
       setCards(shuffledCards)
   }
 
-
   useEffect(() => {
     const calendar = localStorage.calendar ? JSON.parse(localStorage.calendar)
     : createCalendar();
 
     setHatches(calendar);
   }, [])
-
-  // store calendar in localStorage
-  useEffect(() => {
-    hatches.length && localStorage.setItem('calendar', JSON.stringify(hatches));
-  }, [hatches])
-
 
   const handleFlipHatch = id => {
     const updatedHatches = hatches.map(hatch =>

@@ -75,7 +75,7 @@ export const StyledModal = styled.div`
   .modal-close-ico {
     position: absolute;
     right: 10px;
-    top: 60px;
+    top: 10px;
     cursor: pointer;
   }
 
